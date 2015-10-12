@@ -1,4 +1,5 @@
 var React = require('react');
+var DateTimePicker = require('react-widgets').DateTimePicker
 
 var FormHeaderEdit = React.createClass({
   render: function() {
@@ -20,19 +21,13 @@ var FormHeaderEdit = React.createClass({
               <div className="col-xs-6">
                 <label>From</label>
                 <div className="input-group">
-                  <div className="input-icon">
-                    <span className="input-group-addon"><i className="pi pi-calendar"></i></span>
-                    <input type="text" className="form-control" />
-                  </div>
+                  <DateTimePicker time={false}/>
                 </div>
               </div>
               <div className="col-xs-6">
                 <label>To</label>
                 <div className="input-group">
-                  <div className="input-icon">
-                    <span className="input-group-addon"><i className="pi pi-calendar"></i></span>
-                    <input type="text" className="form-control" />
-                  </div>
+                  <DateTimePicker time={false}/>
                 </div>
               </div>
             </div>
