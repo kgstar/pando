@@ -21,13 +21,13 @@ var FormHeaderEdit = React.createClass({
               <div className="col-xs-6">
                 <label>From</label>
                 <div className="input-group">
-                  <DateTimePicker time={false}/>
+                  <DateTimePicker time={false} format="yyyy-MM-dd"/>
                 </div>
               </div>
               <div className="col-xs-6">
                 <label>To</label>
                 <div className="input-group">
-                  <DateTimePicker time={false}/>
+                  <DateTimePicker time={false} format="yyyy-MM-dd"/>
                 </div>
               </div>
             </div>
@@ -82,34 +82,6 @@ var FormHeaderEdit = React.createClass({
             I declare that the above expenses have been reasonably and actually
             incurred by me in fulfilling my responsibilities as an employee of Fitch.
             </label>
-          </div>
-        </div>
-        <div className="form-group">
-          <div className="col-xs-12">
-            <button type="submit" className="btn btn-sm btn-green">Confirm and Submit</button>
-          </div>
-        </div>
-
-        <div className="dropdown">
-          <a className="dropdown-toggle" href="javascript:void(0)">
-            <i className='pi pi-plus'></i>
-            <span className="translation_missing" title="translation missing: en.visitors.static_expense_detail.add_new_entry">Add New Entry</span>
-            <i className='pi pi-arrow-drop-down'></i>
-          </a>
-          <div className="dropdown-menu">
-            <div className="arrow"></div>
-            <ul>
-              <li ng-click="newEntryManual()">
-                <a href="javascript:void(0)">
-                  <span className="translation_missing" title="translation missing: en.visitors.static_expense_detail.manual_entry">Manual Entry</span>
-                </a>
-              </li>
-              <li ng-click="newEntryImport()">
-                <a href="javascript:void(0)">
-                  <span className="translation_missing" title="translation missing: en.visitors.static_expense_detail.import">Import</span>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
